@@ -43,19 +43,18 @@ inquirer.prompt([{ // name of project
 
     .then((response) => {
         const input = `
-        # Title: ${response.projectName}\n
-        # Description:  ${response.description}\n
-        ## Table of Contents:  ${response.toc}\n
-        ## Installation: ${response.installation}\n
-        ## App Usage: ${response.usage}\n
-        ## Contrabution Guidlines  ${response.contribution}\n
-        ## Test Instructions  ${response.testInstructions}\n
+        ## Title: \n ${response.projectName}\n
+        ## Description: \n ${response.description}\n
+        ## Table of Contents: \n ${response.toc}\n
+        ## Installation: \n ${response.installation}\n
+        ## App Usage: \n ${response.usage}\n
+        ## Contrabution Guidlines  \n ${response.contribution}\n
+        ## Test Instructions  \n ${response.testInstructions}\n
         `
 
         fs.writeFile("README.md", input, (err) => {
             err ? console.log(err) : console.log("file has been written")
         });
-
     })
 
 
