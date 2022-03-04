@@ -55,14 +55,14 @@ const init = () => {
 
 }
 const writeReadme = data => {
-    // then(data => {
+    
     const title = data.project
     fs.writeFile("README.md", JSON.stringify(data), (err) => {
         err ? console.log(err) : console.log("file has been written")
     })
     console.log(data)
     return (data);
-    // })
+    
 }
 
 
