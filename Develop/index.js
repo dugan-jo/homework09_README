@@ -15,11 +15,6 @@ inquirer.prompt([{ // name of project
             message: 'Please add a description of your project?',
             name: 'description',
         },
-        { // table of contents
-            type: 'input',
-            message: 'Please add a description of your project?',
-            name: 'toc',
-        },
         { // installation
             type: 'input',
             message: 'Installation instructions',
@@ -44,13 +39,13 @@ inquirer.prompt([{ // name of project
 
     .then((response) => {
 
-        const input = `# Header\n${response.projectName}"<br>"
-        \n## Description\n${response.description}\n
-        ## Table of Contents \n${response.toc}\n
-        ## Installation\n${response.installation}
-        ## App Usage\n${response.usage}
-        ## Contrabution Guidlines\n${response.contribution}
-        ## Test Instructions\n${response.testInstructions}<\n`
+        const input = `# Title\n\n${response.projectName}
+        ## Description\n\n${response.description}
+        ## Table of Contents\n\n${response.toc}
+        ## Installation\n\n${response.installation}
+        ## App Usage\n\n${response.usage}
+        ## Contrabution Guidlines\n\n${response.contribution}
+        ## Test Instructions\n\n${response.testInstructions}`
 
         fs.writeFile("README.md", input, (err) => {
             err ? console.log(err) : console.log("file has been written")
