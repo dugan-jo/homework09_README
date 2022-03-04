@@ -25,6 +25,12 @@ inquirer.prompt([{ // name of project
             message: 'What is this application used for?',
             name: 'usage',
         },
+        {
+            type: 'list',
+            message: 'what type license is used?',
+            choices: ['![MIT](https://img.shields.io/github/license/dugan-jo/homework09_README)', 'mozilla Public 2.0', 'GNU GPLv3', 'Rust', 'OpenBSD'],
+            name: 'license',
+        },
         { // contribution guidlines
             type: 'input',
             message: 'Does your app have contribution guidelines?',
