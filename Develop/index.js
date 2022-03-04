@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const input = [];
 
+
 // TODO: Create an array of questions for user input
 inquirer.prompt([{ // name of project
             type: 'input',
@@ -42,19 +43,19 @@ inquirer.prompt([{ // name of project
     ])
 
     .then((response) => {
-        const input = `
-        ## Title: \n ${response.projectName}\n
-        ## Description: \n ${response.description}\n
-        ## Table of Contents: \n ${response.toc}\n
-        ## Installation: \n ${response.installation}\n
-        ## App Usage: \n ${response.usage}\n
-        ## Contrabution Guidlines  \n ${response.contribution}\n
-        ## Test Instructions  \n ${response.testInstructions}\n
-        `
+
+        const input = `# Header\n${response.projectName}"<br>"
+        \n## Description\n${response.description}\n
+        ## Table of Contents \n${response.toc}\n
+        ## Installation\n${response.installation}
+        ## App Usage\n${response.usage}
+        ## Contrabution Guidlines\n${response.contribution}
+        ## Test Instructions\n${response.testInstructions}<\n`
 
         fs.writeFile("README.md", input, (err) => {
             err ? console.log(err) : console.log("file has been written")
         });
+        
     })
 
 
