@@ -1,20 +1,42 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+const generateMarkdown = (data) => {
+  return `# ${data.project} 
+  ![license](https://img.shields.io/badge/license-${data.license}-green.svg)
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+  ## Description 
+  ${data.project}
 
-`;
+  ## Table of Context
+  *Installation(#installation)
+
+  ## Installation
+  
+  ${data.installation}
+
+  ## Usage
+  Here are some examples of how this app could be used
+  ${data.usage}
+
+
+  ## Contributing
+    If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+
+    Fork the Project
+    Create your Feature Branch (git checkout -b feature/AmazingFeature)
+    Commit your Changes (git commit -m 'Add some AmazingFeature')
+    Push to the Branch (git push origin feature/AmazingFeature)
+    Open a Pull Request
+
+
+  ## Testing Requierments 
+
+  ## License
+  Dsitributed uder the ${data.license} license. 
+  `
 }
 
-module.exports = generateMarkdown;
+
+module.exports = { 
+  generateMarkdown
+}
