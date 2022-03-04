@@ -39,12 +39,12 @@ inquirer.prompt([{ // name of project
 
     .then((response) => {
 
-        const input = `# Title\n\n${response.projectName}
-        ## Description\n\n${response.description}
-        ## Table of Contents\n\n${response.toc}
-        ## Installation\n\n${response.installation}
-        ## App Usage\n\n${response.usage}
-        ## Contrabution Guidlines\n\n${response.contribution}
+        const input = `# Title\n\n${response.projectName}\n
+        ## Description\n\n${response.description}\n
+        ## Table of Contents\n\n${response.toc}\n
+        ## Installation\n\n${response.installation}\n
+        ## App Usage\n\n${response.usage}\n
+        ## Contrabution Guidlines\n\n${response.contribution}\n
         ## Test Instructions\n\n${response.testInstructions}`
 
         fs.writeFile("README.md", input, (err) => {
