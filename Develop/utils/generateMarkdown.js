@@ -1,7 +1,8 @@
 
 
 const generateMarkdown = (data) => {
-  return `# ${data.project}
+  return `
+  # ${data.project}
   ![license](https://img.shields.io/badge/license-${data.license}-green.svg)
 
   ## Description

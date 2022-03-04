@@ -57,7 +57,7 @@ const init = () => {
 const writeReadme = data => {
     
     const title = data.project
-    fs.writeFile("README.md", JSON.stringify(data), (err) => {
+    fs.writeFile("README.md", data, (err) => {
         err ? console.log(err) : console.log("file has been written")
     })
     console.log(data)
