@@ -45,11 +45,12 @@ inquirer.prompt([{ // name of project
 
     .then((response) => {
 
-        const input = `# Title\n${response.projectName}
-        \n## Description\n${response.description}
-        \n## Table of Contents\n${response.toc}
+        const input = `# Title\n\n${response.projectName}
+        \n## Description\n\n${response.description}
+        \n## Table of Contents\n\n${response.toc}
         \n## Installation\n\n${response.installation}
         \n## App Usage\n\n${response.usage}
+        \n## App license\n\n${response.usage}
         \n## Contrabution Guidlines\n\n${response.contribution}
         \n## Test Instructions\n\n${response.testInstructions}`
 
