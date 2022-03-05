@@ -1,9 +1,9 @@
 
-  #  homework09_gernerate_markdown
+  # homework09_generate_markdown
   ![license](https://img.shields.io/badge/license-MIT-green.svg)
 
   ## Description
-   homework09_gernerate_markdown
+  yes
 
   ## Table of Context
   *Installation(#installation)
@@ -14,7 +14,7 @@
 
   ## Usage
   Here are some examples of how this app could be used
-  for school
+  shcool
 
 
   ## Contributing

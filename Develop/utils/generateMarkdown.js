@@ -6,7 +6,7 @@ const generateMarkdown = (data) => {
   ![license](https://img.shields.io/badge/license-${data.license}-green.svg)
 
   ## Description
-  ${data.project}
+  ${data.description}
 
   ## Table of Context
   *Installation(#installation)
