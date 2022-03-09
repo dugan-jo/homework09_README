@@ -17,6 +17,11 @@ const init = () => {
             name: 'project',
         
         },
+        { // your name
+            type: 'input',
+            message: 'What is your name?',
+            name: 'yourName',
+        },
         { // description
             type: 'input',
             message: 'Please add a description of your project?',
@@ -32,6 +37,16 @@ const init = () => {
             message: 'What is this application used for?',
             name: 'usage',
         },
+        { // github
+            type: 'input',
+            message: 'What is your github name?',
+            name: 'github',
+        },
+        { // email
+            type: 'input',
+            message: 'What is your email?',
+            name: 'email',
+        },
         { //license information
             type: 'list',
             message: 'what type of license would you like?',
@@ -42,7 +57,7 @@ const init = () => {
         { // contribution guidlines
             type: 'input',
             message: 'Does your app have contribution guidelines?',
-            name: 'contribution',
+            name: 'contributing',
 
         },
         { // test instructions

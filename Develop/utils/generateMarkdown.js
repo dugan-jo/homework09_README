@@ -8,19 +8,26 @@ const generateMarkdown = (data) => {
   ## Description
   ${data.description}
 
-  ## Table of Context
-  *Installation(#installation)
+  ## Table of Contents
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  3. [Contributing](#contributing)
+  4. [Testing Requierments](#testing)
+  5. [License](#license)
 
-  ## Installation
+  ## Installation <a id="installation"></a>
   
   ${data.installation}
 
-  ## Usage
-  Here are some examples of how this app could be used
-  ${data.usage}
+  ## Usage <a id="usage"></a>
+  Here are some examples of how this app could be used 
+    \n${data.usage}
 
 
-  ## Contributing
+  ## Contributing <a id="contributing"></a>
+
+  Instruction: ${data.contributing}
+
     \nIf you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
     Fork the Project
@@ -28,11 +35,16 @@ const generateMarkdown = (data) => {
     Commit your Changes (git commit -m 'Add some AmazingFeature')
     Push to the Branch (git push origin feature/AmazingFeature)
     Open a Pull Request
+  
+  If you have any questions please contact ${data.yourName} at https://github.com/${data.github} or ${data.email}.
+  Thank you!
 
 
-  ## Testing Requierments 
+  ## Testing Requierments <a id="testing"></a>
 
-  ## License
+  
+
+  ## License <a id="license"></a>
   Dsitributed uder the ${data.license} license. 
   `;
 }
