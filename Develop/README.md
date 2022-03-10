@@ -1,9 +1,9 @@
 
-  # homework 09
+  # homework09
   ![license](https://img.shields.io/badge/license-MIT-green.svg)
 
   ## Description
-  this is a description
+  yes I can fill this out later
 
   ## Table of Contents
   1. [Installation](#installation)
@@ -14,17 +14,17 @@
 
   ## Installation <a id="installation"></a>
   
-  no instructions
+  no
 
   ## Usage <a id="usage"></a>
   Here are some examples of how this app could be used 
     
-to create a README.md file
+created read me
 
 
   ## Contributing <a id="contributing"></a>
 
-  Instruction: no guidelines
+  Instruction: nope
 
     
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
@@ -35,7 +35,7 @@ If you have a suggestion that would make this better, please fork the repo and c
     Push to the Branch (git push origin feature/AmazingFeature)
     Open a Pull Request
   
-  If you have any questions please contact Joe Dugan at https://github.com/dugan-jo or joseph.michael.dugan@gmail.com.
+  If you have any questions please contact joe at https://github.com/dugan-jo or dugan@gmail.com.
   Thank you!
 
 
