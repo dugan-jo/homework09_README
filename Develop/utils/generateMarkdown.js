@@ -40,12 +40,12 @@ const generateMarkdown = (data) => {
   Thank you!
 
 
-  ## Testing Requierments <a id="testing"></a>
+  ## Testing Requirement's <a id="testing"></a>
 
   
 
   ## License <a id="license"></a>
-  Dsitributed uder the ${data.license} license. 
+  Distributed under the ${data.license} license. 
   `;
 }
 
